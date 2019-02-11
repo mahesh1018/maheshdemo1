@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Bootstrap Accordion with Plus Minus Icons Example</title>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+});
+})
+</script>
+</head>
+<body>
+<form id="form1">
+<div class="container" style="width:50%">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#menuOne">
+<span class="glyphicon glyphicon-minus"></span>
+Sample Test #1
+</a>
+</h4>
+</div>
+<div id="menuOne" class="panel-collapse collapse in">
+<div class="panel-body">
+TEST
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#menuTwo">
+<span class="glyphicon glyphicon-plus"></span>
+Sample Menu #2
+</a>
+</h4>
+</div>
+<div id="menuTwo" class="panel-collapse collapse">
+<div class="panel-body">
+Welcome to Aspdotnet-Suresh Welcome to Aspdotnet-Suresh Welcome to Aspdotnet-Suresh
+Welcome to Aspdotnet-SureshWelcome to Aspdotnet-SureshWelcome to Aspdotnet-Suresh
+Welcome to Aspdotnet-SureshWelcome to Aspdotnet-SureshWelcome to Aspdotnet-Suresh.
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#menuThree">
+<span class="glyphicon glyphicon-plus"></span>
+Sample Menu #3
+</a>
+</h4>
+</div>
+<div id="menuThree" class="panel-collapse collapse">
+<div class="panel-body">
+Welcome to Aspdotnet-Suresh Welcome to Aspdotnet-Suresh Welcome to Aspdotnet-Suresh
+Welcome to Aspdotnet-SureshWelcome to Aspdotnet-SureshWelcome to Aspdotnet-Suresh
+Welcome to Aspdotnet-SureshWelcome to Aspdotnet-SureshWelcome to Aspdotnet-Suresh.
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>

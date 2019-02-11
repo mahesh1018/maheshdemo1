@@ -1,0 +1,34 @@
+1. Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
+
+To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+
+
+2. Containers
+
+Bootstrap also requires a containing element to wrap site contents.
+
+There are two container classes to choose from:
+
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+Note: Containers are not nestable (you cannot put a container inside another container).
+
+
+
+3. Grid Classes(12 columns)
+The Bootstrap grid system has four classes:
+
+xs (for phones)
+sm (for tablets)
+md (for desktops)
+lg (for larger desktops)
+The classes above can be combined to create more dynamic and flexible layouts.
+
+
+

@@ -1,0 +1,19 @@
+Bootstrap:
+
+CSS-themes
+
+Layout, themes, grids, components
+
+Easy to use:
+Mobile first:
+Responsive web design:
+Browser support: 
+SPA(Single Page Applications)
+It takes very less time to develop(web development)
+
+3.3.7 version
+open source
+
+
+
+html(base html): application code/tabs/....
